@@ -1,0 +1,37 @@
+@import "custom-variables";
+@import "fonts.scss";
+@import "reset";
+@import "default-clases.scss";
+@import "layout.scss";
+
+
+.inner{
+	@extend %vertical-aling;
+	// height: calc( 100vh - 80px);
+	height: 622px;
+	background: url("../img/inner-bg.jpg") no-repeat top center;
+	background-size: cover;
+	text-align: center;
+}
+.inner-block h1{
+	margin: 175px 0 29px 0;
+	font-size: 72px;
+	color: #ffffff;
+	font-weight: 600;
+}
+.inner-block span{
+	font-size: 28px;
+	color: rgba(242,242,243,.90);
+}
+.inner-form{
+	margin-top: 50px;
+	padding: 25px 35px 43px 37px;
+	background-color: rgba(0,0,0,.45);
+	width: 100%;
+}
+.inner-form .form-control{
+	width: 325px;
+}
+.first-form input{
+	margin-right: 6px;
+}
