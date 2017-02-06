@@ -284,26 +284,37 @@ select {
       width: 325px; }
     .inner .inner-form .first-form input + input {
       margin-left: 6px; }
-  .inner .second-form {
-    display: none; }
-    .inner .second-form .input-group + .input-group {
-      margin-bottom: 16px; }
-    .inner .second-form .input-group .form-control {
-      width: 240px;
-      height: 50px; }
+    .inner .inner-form .second-form {
+      display: none; }
+      .inner .inner-form .second-form .input-group {
+        margin-bottom: 15px; }
+        .inner .inner-form .second-form .input-group label {
+          float: left; }
+        .inner .inner-form .second-form .input-group input label + input label {
+          margin-left: 50px; }
+      .inner .inner-form .second-form input + input {
+        margin-left: 7px; }
+      .inner .inner-form .second-form .form-control {
+        width: 240px;
+        height: 50px;
+        vertical-align: middle; }
 
 .standart-block {
   text-align: center;
   padding: 25px 0 37px;
   background: #f6f8f8; }
 
-.service-wrap .service-item {
-  width: 33.3333%;
-  float: left; }
-  .service-wrap .service-item .icon {
-    display: block;
-    margin-bottom: 10px; }
-  .service-wrap .service-item h3 {
-    display: inline-block; }
-  .service-wrap .service-item p {
-    padding-right: 150px; }
+.service-wrap {
+  overflow: hidden; }
+  .service-wrap .row {
+    overflow: hidden; }
+    .service-wrap .row .service-item {
+      width: 33.3333%;
+      float: left; }
+      .service-wrap .row .service-item .icon {
+        display: block;
+        margin-bottom: 10px; }
+      .service-wrap .row .service-item h3 {
+        display: inline-block; }
+      .service-wrap .row .service-item p {
+        padding-right: 150px; }

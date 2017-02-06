@@ -8,7 +8,7 @@
 	});
 	$(function() {
 
- 	 $('input, select').styler();
+ 	 $('select').styler();
 
 	});
 })(jQuery);

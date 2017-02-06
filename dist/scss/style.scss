@@ -49,22 +49,32 @@
 			margin-left: 6px;	
 			
 		}
-	}
 
-	.second-form{
-		display: none;
-		.input-group{
-			& + .input-group{
-				margin-bottom: 16px;
+
+		.second-form{
+			display: none;
+			.input-group{
+				margin-bottom: 15px;
+				label{
+					float: left;
+				}
+				input label + input label{
+					margin-left: 50px;
+				}
+			}
+		
+			input + input{
+				margin-left: 7px;
 			}
 			.form-control{
 				width: 240px;
 				height: 50px;
-				
-			}
-
+				vertical-align: middle;
+			}	
 		}	
-	}
+
+	}	
+	
 
 }
 .standart-block{
@@ -73,7 +83,10 @@
     background: #f6f8f8;
 }
 .service-wrap{
-	.service-item{
+	overflow: hidden;
+	.row{
+		overflow: hidden;
+		.service-item{
 		width: 33.3333%;
 		float: left;
 		.icon{
@@ -86,7 +99,9 @@
 		p{
 			padding-right: 150px;
 		}
+		}
 	}
+	
 }
 	  
 
