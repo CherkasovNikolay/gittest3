@@ -2,36 +2,115 @@
 @import "fonts.scss";
 @import "reset";
 @import "default-clases.scss";
+@import "sprite";
+@include sprites($spritesheet-sprites);
 @import "layout.scss";
 
 
 .inner{
 	@extend %vertical-aling;
-	// height: calc( 100vh - 80px);
-	height: 622px;
+	height: calc( 100vh - 80px);
+	// height: 622px;
 	background: url("../img/inner-bg.jpg") no-repeat top center;
 	background-size: cover;
 	text-align: center;
+	.inner-block{
+		color: #ffffff;
+		h1{
+		margin-bottom: 29px;
+		font-size: 72px;
+		font-weight: 600;
+		}
+		&>span{
+		font-size: 28px;
+		color: rgba(242,242,243,.90);
+		}
+	}
+	.inner-form{
+		margin-top: 49px;
+		padding: 25px 35px 43px 37px;
+		background-color: rgba(0,0,0,.45);
+		width: 100%;
+		.first-form{
+			margin-bottom: 10px;
+		}
+		.more-option{
+			display: inline-block;
+			cursor: pointer;
+			padding-right: 87%;
+			margin-bottom: 17px;
+			font-size: 14px;
+		}
+
+		.form-control{
+			width: 325px;
+		}
+		.first-form input + input{
+			margin-left: 6px;	
+			
+		}
+	}
+
+	.second-form{
+		display: none;
+		.input-group{
+			& + .input-group{
+				margin-bottom: 16px;
+			}
+			.form-control{
+				width: 240px;
+				height: 50px;
+				
+			}
+
+		}	
+	}
+
 }
-.inner-block h1{
-	margin: 175px 0 29px 0;
-	font-size: 72px;
-	color: #ffffff;
-	font-weight: 600;
+.standart-block{
+	text-align: center;
+    padding: 25px 0 37px;
+    background: #f6f8f8;
 }
-.inner-block span{
-	font-size: 28px;
-	color: rgba(242,242,243,.90);
+.service-wrap{
+	.service-item{
+		width: 33.3333%;
+		float: left;
+		.icon{
+			display: block;
+			margin-bottom: 10px;
+		}
+		h3{
+			display: inline-block;
+		}
+		p{
+			padding-right: 150px;
+		}
+	}
 }
-.inner-form{
-	margin-top: 50px;
-	padding: 25px 35px 43px 37px;
-	background-color: rgba(0,0,0,.45);
-	width: 100%;
-}
-.inner-form .form-control{
-	width: 325px;
-}
-.first-form input{
-	margin-right: 6px;
-}
+	  
+
+
+// .inner-block h1{
+// 	// margin: 175px 0 29px 0;
+// 	margin-bottom: 29px;
+// 	font-size: 72px;
+// 	color: #ffffff;
+// 	font-weight: 600;
+// }
+// .inner-block span{
+// 	font-size: 28px;
+// 	color: rgba(242,242,243,.90);
+// }
+// .inner-form{
+// 	margin-top: 49px;
+// 	padding: 25px 35px 43px 37px;
+// 	background-color: rgba(0,0,0,.45);
+// 	width: 100%;
+// }
+// .inner-form .form-control{
+// 	width: 325px;
+// }
+// .first-form input{
+// 	margin-right: 6px;
+// }

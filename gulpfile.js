@@ -14,6 +14,7 @@ gulp.task('sprite', function () {
 		imgName: 'sprite.png',
 		cssName: '_sprite.scss',
 		imgPath: '../img/sprite.png',
+		padding: 2,
 }));
 	var imgStream = spriteData.img
 		.pipe(gulp.dest('app/img/'));
@@ -24,6 +25,7 @@ gulp.task('sprite', function () {
 	return merge(imgStream, cssStream);
 });
 
-gulp.task('watch', ['sass'], function(){
+gulp.task('watch', ['sass','sprite'], function(){
 	gulp.watch('dist/scss/**/*.scss', ['sass']);
+	gulp.watch('dist/img/sprite/*.png', ['sprite']);
 })

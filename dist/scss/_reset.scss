@@ -43,10 +43,11 @@ input[type="submit"], button{
   cursor: pointer;
   border: none;
 }
-input, select{
+input:not([type="checkbox"],[tupe="radio"]), select{
   border: none;
     -webkit-appearance: none;
 }
+
 textarea{
   resize: vertical;
   border: none;
