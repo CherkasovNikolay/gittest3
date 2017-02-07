@@ -106,29 +106,40 @@
 	}
 	
 }
-	  
+.articles-wrap{
+	padding: 0 0 78px;
+	overflow: hidden;
+	h2{
+		font-size: 20px;
+		margin-bottom: 50px;
+		margin: 60px 0 50px;
+		
+	}
+	.articles-row{
+		overflow: hidden;
+		.articles-block{
+			background-color: #fff;
+			width: 330px;
+			height: 175px;
+			padding: 26px 30px 25px 20px;
+			float: left;
+			border-top: 6px solid #90bed5;
+		}
+		.articles-block + .articles-block{
+		margin-left: 13px;
+		}
+	}
+
+}	  
+.Categories-form{
+	text-align: center;
+	button{
+		font-size: 16px;
+		text-align: center;
+	}
+	button + button{
+		margin-left: 25px;
+	}
+}
 
 
-// .inner-block h1{
-// 	// margin: 175px 0 29px 0;
-// 	margin-bottom: 29px;
-// 	font-size: 72px;
-// 	color: #ffffff;
-// 	font-weight: 600;
-// }
-// .inner-block span{
-// 	font-size: 28px;
-// 	color: rgba(242,242,243,.90);
-// }
-// .inner-form{
-// 	margin-top: 49px;
-// 	padding: 25px 35px 43px 37px;
-// 	background-color: rgba(0,0,0,.45);
-// 	width: 100%;
-// }
-// .inner-form .form-control{
-// 	width: 325px;
-// }
-// .first-form input{
-// 	margin-right: 6px;
-// }

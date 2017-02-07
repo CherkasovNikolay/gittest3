@@ -80,6 +80,9 @@ input[type="checkbox"]{
 select {
 	display: none;
 }
+h2{
+	text-align: center;
+}
 .service-wrap{
 	.service-item{
 		h3{
@@ -99,4 +102,33 @@ select {
 		}
 
 	}
+}
+.articles-wrap{
+	background-color: $bgBlue;
+	color: #fff;
+	.articles-block{
+		h3{
+			color: #515a60;
+			font-size: 20px;
+		}
+		p{
+			color: #6c767e;
+			font-size: 16px;
+		}
+
+	}
+}
+.btn-white{
+	height: 45px;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: transparent;
+	min-width: 160px;
+}
+.btn-orange{
+	height: 40px;
+	border: 1px solid #ef6223;
+	color: #ef6223;
+	background-color: transparent;
+	min-width: 160px;
 }
