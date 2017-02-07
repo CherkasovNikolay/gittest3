@@ -57,8 +57,9 @@
 				margin-bottom: 15px;
 				label{
 					float: left;
+					margin-right: 50px;
 				}
-				input label + input label{
+				input label + label{
 					margin-left: 50px;
 				}
 			}
@@ -80,7 +81,7 @@
 .standart-block{
 	text-align: center;
     padding: 25px 0 37px;
-    background: #f6f8f8;
+    background: $bgGrey;
 }
 .service-wrap{
 	overflow: hidden;
@@ -89,6 +90,8 @@
 		.service-item{
 		width: 33.3333%;
 		float: left;
+		height: 180px;
+		padding-left: 50px;
 		.icon{
 			display: block;
 			margin-bottom: 10px;
@@ -97,7 +100,7 @@
 			display: inline-block;
 		}
 		p{
-			padding-right: 150px;
+			padding-right: 40px;
 		}
 		}
 	}

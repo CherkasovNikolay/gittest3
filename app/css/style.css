@@ -252,6 +252,18 @@ input[type="checkbox"] {
 select {
   display: none; }
 
+.service-wrap .service-item h3 {
+  font-size: 20px;
+  color: #ef6223; }
+
+.service-wrap .service-item span .text {
+  color: #ef6223;
+  font-size: 12px; }
+
+.service-wrap .service-item p {
+  font-size: 16px;
+  color: #6c767e; }
+
 .inner {
   height: -webkit-calc( 100vh - 80px);
   height: calc( 100vh - 80px);
@@ -289,8 +301,9 @@ select {
       .inner .inner-form .second-form .input-group {
         margin-bottom: 15px; }
         .inner .inner-form .second-form .input-group label {
-          float: left; }
-        .inner .inner-form .second-form .input-group input label + input label {
+          float: left;
+          margin-right: 50px; }
+        .inner .inner-form .second-form .input-group input label + label {
           margin-left: 50px; }
       .inner .inner-form .second-form input + input {
         margin-left: 7px; }
@@ -310,11 +323,13 @@ select {
     overflow: hidden; }
     .service-wrap .row .service-item {
       width: 33.3333%;
-      float: left; }
+      float: left;
+      height: 180px;
+      padding-left: 50px; }
       .service-wrap .row .service-item .icon {
         display: block;
         margin-bottom: 10px; }
       .service-wrap .row .service-item h3 {
         display: inline-block; }
       .service-wrap .row .service-item p {
-        padding-right: 150px; }
+        padding-right: 40px; }

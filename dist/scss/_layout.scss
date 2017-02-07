@@ -80,3 +80,23 @@ input[type="checkbox"]{
 select {
 	display: none;
 }
+.service-wrap{
+	.service-item{
+		h3{
+			font-size: 20px;
+			color: $generalOrange;
+		}
+		span{
+			.text{
+				color: $generalOrange;
+				font-size: 12px;
+			}
+			
+		}
+		p{
+			font-size: 16px;
+			color: #6c767e;
+		}
+
+	}
+}
