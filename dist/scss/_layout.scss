@@ -80,9 +80,6 @@ input[type="checkbox"]{
 select {
 	display: none;
 }
-h2{
-	text-align: center;
-}
 .service-wrap{
 	.service-item{
 		h3{
@@ -131,4 +128,23 @@ h2{
 	color: #ef6223;
 	background-color: transparent;
 	min-width: 160px;
+}
+
+// стандартніе стили для кнопки 
+.btn{
+	border: 1px solid transparent;
+	padding: 14px 25px;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 18px;
+	&.btn-white{
+		border-color: #fff;
+		color: #fff;
+		&:hover{
+			
+		}
+	}
+	&.btn-orange{
+		border-color: 1px solid red; 
+	}
 }

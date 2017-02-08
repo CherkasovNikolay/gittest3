@@ -1,16 +1,16 @@
-@import "custom-variables";
-@import "fonts.scss";
-@import "reset";
-@import "default-clases.scss";
-@import "sprite";
+@import "_custom-variables";
+@import "_fonts";
+@import "_reset";
+@import "_default-clases";
+@import "_sprite";
 @include sprites($spritesheet-sprites);
-@import "layout.scss";
+@import "_layout";
+@import "_slick";
 
 
 .inner{
 	@extend %vertical-aling;
 	height: calc( 100vh - 80px);
-	// height: 622px;
 	background: url("../img/inner-bg.jpg") no-repeat top center;
 	background-size: cover;
 	text-align: center;
@@ -45,9 +45,10 @@
 		.form-control{
 			width: 325px;
 		}
-		.first-form input + input{
-			margin-left: 6px;	
-			
+		.first-form{
+		 	input + input{
+				margin-left: 6px;	
+			}
 		}
 
 
@@ -55,29 +56,34 @@
 			display: none;
 			.input-group{
 				margin-bottom: 15px;
-				label{
-					float: left;
-					margin-right: 50px;
+				.more-form{
+					label{
+						float: left;
+						margin-bottom: 11px;
+						font-size: 16px;
+						color: rgba(255, 255, 255, 0.7)
+					}
+
+					& + .more-form{
+					padding-left: 6px;
+					}
+
 				}
-				input label + label{
-					margin-left: 50px;
-				}
-			}
-		
-			input + input{
-				margin-left: 7px;
+
+				
 			}
 			.form-control{
-				width: 240px;
+				width: 100%;
 				height: 50px;
 				vertical-align: middle;
 			}	
-		}	
-
+		}
+		
 	}	
+}	
 	
 
-}
+
 .standart-block{
 	text-align: center;
     padding: 25px 0 37px;
@@ -131,7 +137,7 @@
 	}
 
 }	  
-.Categories-form{
+.categories-form{
 	text-align: center;
 	button{
 		font-size: 16px;
@@ -141,5 +147,24 @@
 		margin-left: 25px;
 	}
 }
+.counties-wrap{
+	h2{
+		font-size: 38px;
+		color: #515a60;
+	}
+}
 
+.more-areas{
+	.title{
+		font-size: 24px;
+		color: #515a60;
+		margin-bottom: 17px;
+	}
+}
+.slider-wrap{
+	padding: 15px 0;
+	border-top: 1px solid #e2e6e7;
+	border-bottom: 1px solid #e2e6e7;
+}
 
+// 
