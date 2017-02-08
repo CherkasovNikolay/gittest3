@@ -262,18 +262,6 @@ input[type="checkbox"] {
 select {
   display: none; }
 
-.service-wrap .service-item h3 {
-  font-size: 20px;
-  color: #ef6223; }
-
-.service-wrap .service-item span .text {
-  color: #ef6223;
-  font-size: 12px; }
-
-.service-wrap .service-item p {
-  font-size: 16px;
-  color: #6c767e; }
-
 .articles-wrap {
   background-color: #30436b;
   color: #fff; }
@@ -466,21 +454,33 @@ select {
     color: #ef6223; }
 
 .service-wrap {
+  margin: 60px 0;
   overflow: hidden; }
   .service-wrap .row {
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 -10px; }
     .service-wrap .row .service-item {
       width: 33.3333%;
       float: left;
       height: 180px;
-      padding-left: 50px; }
+      padding: 0 10px; }
       .service-wrap .row .service-item .icon {
         display: block;
         margin-bottom: 10px; }
       .service-wrap .row .service-item h3 {
-        display: inline-block; }
+        display: inline-block;
+        font-size: 20px;
+        color: #ef6223; }
+        .service-wrap .row .service-item h3 span {
+          font-size: 12px; }
       .service-wrap .row .service-item p {
-        padding-right: 40px; }
+        font-size: 16px;
+        color: #6c767e;
+        padding-right: 23%; }
+
+.more-areas .title {
+  color: #515a60;
+  font-size: 24px; }
 
 .articles-wrap {
   padding: 0 0 78px;
