@@ -80,22 +80,24 @@ input[type="checkbox"]{
 select {
 	display: none;
 }
-
-.articles-wrap{
-	background-color: $bgBlue;
-	color: #fff;
-	.articles-block{
-		h3{
-			color: #515a60;
-			font-size: 20px;
-		}
-		p{
-			color: #6c767e;
-			font-size: 16px;
-		}
-
-	}
+.bg-blue{
+	background-color: $generalBlue;
 }
+// .articles-wrap{
+// 	background-color: $generalBlue;
+// 	color: #fff;
+// 	.articles-block{
+// 		h3{
+// 			color: #515a60;
+// 			font-size: 20px;
+// 		}
+// 		p{
+// 			color: #6c767e;
+// 			font-size: 16px;
+// 		}
+
+// 	}
+// }
 .btn-white{
 	height: 45px;
 	border: 1px solid #fff;
@@ -122,7 +124,8 @@ select {
 		border-color: #fff;
 		color: #fff;
 		&:hover{
-			
+			background: #fff;
+			color: $generalBlue; 
 		}
 	}
 	&.btn-orange{

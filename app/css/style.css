@@ -119,7 +119,7 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   display: inline-block;
   vertical-align: middle; }
 
-h2 {
+.text-center {
   text-align: center; }
 
 .bg-orange {
@@ -262,15 +262,8 @@ input[type="checkbox"] {
 select {
   display: none; }
 
-.articles-wrap {
-  background-color: #30436b;
-  color: #fff; }
-  .articles-wrap .articles-block h3 {
-    color: #515a60;
-    font-size: 20px; }
-  .articles-wrap .articles-block p {
-    color: #6c767e;
-    font-size: 16px; }
+.bg-blue {
+  background-color: #30436b; }
 
 .btn-white {
   height: 45px;
@@ -296,6 +289,9 @@ select {
   .btn.btn-white {
     border-color: #fff;
     color: #fff; }
+    .btn.btn-white:hover {
+      background: #fff;
+      color: #30436b; }
   .btn.btn-orange {
     border-color: 1px solid red; }
 
@@ -478,36 +474,47 @@ select {
         color: #6c767e;
         padding-right: 23%; }
 
-.more-areas .title {
-  color: #515a60;
-  font-size: 24px; }
+.more-areas {
+  margin-bottom: 73px; }
+  .more-areas .title {
+    color: #515a60;
+    font-size: 24px; }
+  .more-areas .slider-wrap .areas-slider {
+    font-size: 16px; }
+    .more-areas .slider-wrap .areas-slider a {
+      color: #f26523; }
 
 .articles-wrap {
   padding: 0 0 78px;
-  overflow: hidden; }
-  .articles-wrap h2 {
-    font-size: 20px;
+  overflow: hidden;
+  color: #fff; }
+  .articles-wrap > .title {
+    font-size: 24px;
     margin-bottom: 50px;
-    margin: 60px 0 50px; }
-  .articles-wrap .articles-row {
-    overflow: hidden; }
-    .articles-wrap .articles-row .articles-block {
-      background-color: #fff;
-      width: 330px;
-      height: 175px;
-      padding: 26px 30px 25px 20px;
+    margin: 63px 0 50px; }
+  .articles-wrap .news-row {
+    overflow: hidden;
+    margin: 0 -13px; }
+    .articles-wrap .news-row > .title {
+      font-size: 24px;
+      margin: 62px 0 50px; }
+    .articles-wrap .news-row .news-post {
+      width: 33.3333%;
       float: left;
-      border-top: 6px solid #90bed5; }
-    .articles-wrap .articles-row .articles-block + .articles-block {
-      margin-left: 13px; }
-
-.categories-form {
-  text-align: center; }
-  .categories-form button {
-    font-size: 16px;
-    text-align: center; }
-  .categories-form button + button {
-    margin-left: 25px; }
+      padding: 0 13px; }
+      .articles-wrap .news-row .news-post .news-content {
+        background-color: #fff;
+        padding: 26px 15px 25px 20px;
+        border-top: 6px solid #90bed5; }
+        .articles-wrap .news-row .news-post .news-content > .title {
+          font-size: 20px;
+          color: #515a60; }
+        .articles-wrap .news-row .news-post .news-content p {
+          padding-top: 15px;
+          font-size: 16px;
+          color: #6c767e; }
+        .articles-wrap .news-row .news-post .news-content a {
+          color: #30436b; }
 
 .counties-wrap h2 {
   font-size: 38px;
