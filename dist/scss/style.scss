@@ -57,6 +57,9 @@
 			overflow: hidden;
 			.input-group{
 				overflow: hidden;
+				& +.input-group{
+
+				}
 				.more-form{
 					label{
 						float: left;
@@ -71,7 +74,12 @@
 				}
 				& + .input-group{
 					margin-top: 15px;
-					
+					label{
+						float: left;
+						& + label{
+							margin-left: 50px;
+							}	
+						}
 					}
 				}
 				.form-control{
@@ -258,8 +266,11 @@
 			text-align: center;
 			color: #fff;
 			font-size: 24px;
+			border-left: 1px solid #da5a1f;
 			span{
 				display: block;
+				margin-bottom: 10px;
+				
 				& + span{
 					color: #a54619;
 					font-size: 14px;
@@ -274,9 +285,28 @@
 	.login-row{
 		padding: 45px 0 40px;
 		margin:0 -10px;
+		display: inline-block;
 		.login-block{
 			width: 50%;
 			float: left;
+			& +.login-block{
+				float: left;
+				text-align: right;
+				.btn{
+					& +.btn{
+					margin-left: 23px;
+					}
+				} 
+			}
+			.title{
+				font-size: 32px;
+				color: #fff;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 15px;
+				color: #dde3ee;
+			}
 		}
 	}
 }
