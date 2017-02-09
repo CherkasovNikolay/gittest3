@@ -128,6 +128,9 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
 .bg-orange {
   background-color: #ef6223; }
 
+.bg-blue {
+  background-color: #30436b; }
+
 .more-form {
   width: 33.3333%;
   float: left; }
@@ -497,7 +500,9 @@ select {
       .articles-wrap .news-row .news-post .news-content {
         background-color: #fff;
         padding: 26px 15px 25px 20px;
-        border-top: 6px solid #90bed5; }
+        border-top: 6px solid #90bed5;
+        -webkit-border-radius: 2px;
+                border-radius: 2px; }
         .articles-wrap .news-row .news-post .news-content > .title {
           font-size: 20px; }
         .articles-wrap .news-row .news-post .news-content p {
@@ -536,7 +541,9 @@ select {
 
 .find-solicitor {
   margin: 57px 0 75px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 0 5px rgba(244, 231, 224, 0.5);
+          box-shadow: 0 0 0 5px rgba(244, 231, 224, 0.5); }
   .find-solicitor .find-text {
     width: 50%;
     float: left;
@@ -558,3 +565,30 @@ select {
         .find-solicitor .country-link .link span + span {
           color: #a54619;
           font-size: 14px; }
+
+.solicitor-login {
+  overflow: hidden; }
+  .solicitor-login .login-row {
+    padding: 45px 0 40px;
+    margin: 0 -10px; }
+    .solicitor-login .login-row .login-block {
+      width: 50%;
+      float: left; }
+
+.footer {
+  padding: 45px 0; }
+  .footer .footer-nav {
+    font-weight: 600; }
+    .footer .footer-nav li {
+      display: inline; }
+      .footer .footer-nav li + li {
+        margin-left: 10px; }
+  .footer .footer-logo {
+    background: url("../img/footer-logo.png") no-repeat center center;
+    display: block;
+    margin: 0 auto 21px;
+    width: 238px;
+    height: 70px; }
+  .footer .copyright {
+    font-size: 14px;
+    color: #7d858b; }
