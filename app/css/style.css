@@ -108,14 +108,14 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
 
-.inner::before {
+.inner::before, .find-solicitor .find-text::before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
   margin-left: -4px; }
 
-.inner > * {
+.inner > *, .find-solicitor .find-text > * {
   display: inline-block;
   vertical-align: middle; }
 
@@ -435,7 +435,6 @@ select {
         vertical-align: middle; }
 
 .standart-block {
-  text-align: center;
   padding: 25px 0 37px;
   background: #f6f8f8;
   font-size: 18px; }
@@ -513,7 +512,6 @@ select {
   margin-bottom: 17px; }
 
 .categories-btn {
-  text-align: center;
   padding-bottom: 77px; }
   .categories-btn .btn + .btn {
     margin-left: 30px; }
@@ -527,13 +525,36 @@ select {
   .counties-wrap .counties-row .title {
     font-size: 38px;
     margin-bottom: 70px; }
-  .counties-wrap .counties-row .counties-btn {
-    text-align: center; }
-    .counties-wrap .counties-row .counties-btn a span {
-      font-size: 12px; }
-    .counties-wrap .counties-row .counties-btn .btn {
-      font-size: 20px;
-      margin-bottom: 20px;
-      padding: 13px; }
-      .counties-wrap .counties-row .counties-btn .btn + .btn {
-        margin-left: 10px; }
+  .counties-wrap .counties-row .counties-btn a span {
+    font-size: 12px; }
+  .counties-wrap .counties-row .counties-btn .btn {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 13px; }
+    .counties-wrap .counties-row .counties-btn .btn + .btn {
+      margin-left: 10px; }
+
+.find-solicitor {
+  margin: 57px 0 75px;
+  overflow: hidden; }
+  .find-solicitor .find-text {
+    width: 50%;
+    float: left;
+    padding: 20px 27px;
+    font-size: 30px;
+    color: #fff; }
+  .find-solicitor .country-link {
+    width: 50%;
+    float: left; }
+    .find-solicitor .country-link .link {
+      width: 33.3333%;
+      float: left;
+      padding: 33px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 24px; }
+      .find-solicitor .country-link .link span {
+        display: block; }
+        .find-solicitor .country-link .link span + span {
+          color: #a54619;
+          font-size: 14px; }

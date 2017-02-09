@@ -87,7 +87,6 @@
 
 
 .standart-block{
-	text-align: center;
     padding: 25px 0 37px;
     background: $bgGrey;
     font-size: 18px;
@@ -193,7 +192,6 @@
 	}
 }
 .categories-btn{
-	text-align: center;
 	padding-bottom: 77px;
 	.btn{
 		& +.btn{
@@ -218,7 +216,6 @@
 			margin-bottom: 70px;
 		}
 		.counties-btn{
-			text-align: center;
 			a{
 				span{
 					font-size: 12px;
@@ -235,6 +232,39 @@
 		}
 	}
 	
+}
+
+.find-solicitor{
+	margin: 57px 0 75px;
+	overflow: hidden;
+	.find-text{
+	width: 50%;
+	float: left;
+	padding: 20px 27px;
+	font-size: 30px;
+	color: #fff;
+	@extend %vertical-aling;
+	}
+	.country-link{
+		width: 50%;
+		float: left;
+		.link{
+			width: 33.3333%;
+			float: left;
+			padding: 33px 0;
+			text-align: center;
+			color: #fff;
+			font-size: 24px;
+			span{
+				display: block;
+				& + span{
+					color: #a54619;
+					font-size: 14px;
+				}
+			} 
+		}
+
+	}
 }
 
 
