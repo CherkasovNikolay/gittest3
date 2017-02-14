@@ -4,12 +4,19 @@
 	width: $desktopContainerWidth;
 	padding: 0 10px;
 	margin: 0 auto;
+	@media (max-width: 1104px){
+		width: $mediumContainerWidth;
+	}
+	@media (max-width: 1023px){
+		width: 100%;
+	}
 }
 
 .header{
 	height: $desktopHeaderHeight;
 	width: 100%;
 	background: #fff;
+	position: relative;
 	.logo{	
 		float: left;
 		margin-top: 15px;
@@ -17,10 +24,24 @@
 	.header-nav{
 		margin-top: 27px;
 		float: right;
+		.form-serch{
+			display: none;
+				
+		}
+		.submit{
+			display: none;
+			
+		}
+		@media (max-width: 479px){
+					display: none;
+		 		}
+		
+
 		li{
 			display: inline-block;
 			margin-right: 27px;
 			font-size: 16px;
+			
 			a{
 				font-size: 16px;
 				&:hover{
@@ -28,21 +49,79 @@
 				}
 			}
 		}
+		ul{
+			li:last-child{	
+				a{
+					@media (max-width: 479px){
+						display: none;
+					}
+					
+				}
+				
+			}
+		}
+		
 
 	}
 }
+.slicknav_menu {
+	display:none;
+	@media (max-width: 479px){
+		display: block;
+		float: right;
+	}
+	ul{
+		padding-bottom: 10px;
+		li{
+			a:hover{
+				color: $generalOrangeText;
+			}
+		}
+
+		li:last-child{
+			// width: 50px;
+			.form-serch{
+				@media (max-width: 479px){
+					display: block;
+					width: auto;
+    				border: 2px solid $generalOrangeText;
+    				border-radius: 20px;
+    				padding: 5px 0px 5px 15px;
+    				color: #7e878d;
+    				width: 150px
+				}
+			}
+			.submit{
+				@media(max-width: 479px){
+					display: block;
+					background-color: #fff;
+    				position: absolute;
+    				top: 5px;
+    				right: 15px;
+    			}
+			}
+			
+			a{
+				@media (max-width: 479px){
+					display: none;
+				}
+				
+			}
+		}
+	}
+
+}
+
 
 .form-control{
-	height: 60px;
 	border-radius: 2px;
 	font-size: 16px;
 	color: #939a9f;
-	padding: 0 14px 0 17px;
+	padding: 20px 14px 20px 17px;
 
 }
 .form-btn{
-	height: 60px;
-	padding: 22px 27px 24px;
+	padding: 20px 27px 20px;
 	border-radius: 2px;
 	display: inline-block;
 	font-size: 16px;
@@ -53,6 +132,7 @@
 }
 .icon{
 	display: inline-block;
+
 }
 input[type="checkbox"]{
 	display: none;
@@ -67,6 +147,7 @@ input[type="checkbox"]{
 			background: #fff;
 			box-shadow: 0px 2px 3px rgba(0,0,0,.22) inset;
 			margin-right: 8px;
+			vertical-align: middle;
 		}
 	}	
 	&:checked{

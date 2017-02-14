@@ -14,21 +14,31 @@
 	background: url("../img/inner-bg.jpg") no-repeat top center;
 	background-size: cover;
 	text-align: center;
+	@media (max-width: 1023px){
+		height: auto;
+		padding: 40px 0;
+	}
 	.inner-block{
 		color: #ffffff;
 		h1{
 		margin-bottom: 29px;
 		font-size: 72px;
 		font-weight: 600;
+		@media(max-width: 479px){
+			font-size: 60px;
+		}
 		}
 		&>span{
 		font-size: 28px;
 		color: rgba(242,242,243,.90);
+		@media(max-width: 479px){
+			font-size: 23px;
+		}
 		}
 	}
 	.inner-form{
 		margin-top: 49px;
-		padding: 25px 35px 43px 37px;
+		padding: 25px 35px 0 37px;
 		background-color: rgba(0,0,0,.45);
 		width: 100%;
 		.first-form{
@@ -44,10 +54,23 @@
 
 		.form-control{
 			width: 325px;
+			@media (max-width: 959px){
+				width: 100%;
+			}
+		}
+		.form-btn{
+			@media (max-width: 959px){
+				width: 100%;
+			}
 		}
 		.first-form{
 		 	input + input{
-				margin-left: 6px;	
+				margin-left: 6px;
+				@media (max-width: 959px){
+					margin-left: 0;
+					margin-top: 10px;
+
+				}	
 			}
 		}
 
@@ -55,12 +78,20 @@
 		.second-form{
 			display: none;
 			overflow: hidden;
+			padding-bottom: 22px;
 			.input-group{
 				overflow: hidden;
 				& +.input-group{
-
+					@media (max-width: 662px){
+							text-align: left;
+					
+					}
 				}
 				.more-form{
+					@media (max-width: 767px){
+						width: 100%;
+					}
+
 					label{
 						float: left;
 						margin-bottom: 11px;
@@ -70,21 +101,37 @@
 
 					& + .more-form{
 					padding-left: 6px;
+						@media (max-width: 767px){
+							padding-top: 7px;
+							padding-left: 0;
+						}	
+
 					}
 				}
 				& + .input-group{
 					margin-top: 15px;
+					line-height: normal;
 					label{
 						float: left;
-						& + label{
+						span{
+							vertical-align: middle;
+						}
+						@media(max-width: 662px){
+							float: none;
+							display: block;
+						}
+						& ~ label{
 							margin-left: 50px;
+							@media(max-width: 662px){
+								margin-left: 0;
+							}
 							}	
 						}
 					}
 				}
 				.form-control{
 				width: 100%;
-				height: 50px;
+				// height: 50px;
 				vertical-align: middle;
 				}
 			}
@@ -95,9 +142,12 @@
 
 
 .standart-block{
-    padding: 25px 0 37px;
+    padding: 30px 0;
     background: $bgGrey;
     font-size: 18px;
+    @media(max-width: 1124px){
+    	font-size: 16px;
+    }
     a{
     	color: #ef6223;
     }
@@ -113,6 +163,18 @@
 		float: left;
 		height: 180px;
 		padding: 0 10px;
+		@media (max-width: 959px){
+			width: 50%;
+		}
+		@media (max-width: 599px){
+			width: 100%;
+			height: auto;
+		}
+		& + .service-item{
+			@media (max-width: 599px){
+				margin-top: 20px;
+			}
+		}
 		.icon{
 			display: block;
 			margin-bottom: 10px;
@@ -121,6 +183,7 @@
 			display: inline-block;
 			font-size: 20px;
 			color: $generalOrange;
+			margin-bottom: 12px;
 			span{
 				font-size: 12px;
 			}
@@ -128,7 +191,11 @@
 		p{
 			font-size: 16px;
 			color: #6c767e;
-			padding-right: 23%;
+			// padding-right: 23%;
+			width: 70%;
+			@media(max-width: 1024px){
+				width: 80%;
+			}
 		}
 		}
 	}
@@ -148,6 +215,7 @@
 
 		.areas-slider{
 			font-size: 16px;
+			line-height: normal;
 			a{
 				color: $generalOrangeText;
 			}
@@ -172,6 +240,14 @@
 			width: 33.3333%;
 			float: left;
 			padding: 0 13px;
+			@media (max-width: 959px){
+				width: 100%;
+			}
+			& + .news-post{
+				@media (max-width: 959px){
+					margin-top: 10px;
+				}
+			}
 			.news-content{
 				background-color: #fff;
 				padding: 26px 15px 25px 20px;
@@ -201,17 +277,37 @@
 	}
 }
 .categories-btn{
+	margin-top: -1px;
 	padding-bottom: 77px;
+	overflow: hidden;
 	.btn{
+		@media (max-width: 799px){
+			width: 50%;
+			float: none;
+		}
+
+		@media (max-width: 599px){
+			width: 100%;
+			float: none;
+		}
 		& +.btn{
 			margin-left: 30px;
+			@media (max-width: 799px){
+				margin-left: 0;
+				margin-top: 20px;
+			}
+			@media (max-width: 599px){
+				margin-left: 0;
+				margin-top: 20px;
+			}
 		}
+		
 	} 
 	.categories-row{
-			&>.title{
-		font-size: 24px;
-		color: #fff;
-		margin-bottom: 42px;
+		&>.title{
+			font-size: 24px;
+			color: #fff;
+			margin-bottom: 42px;
 		}
 	}
 
@@ -231,11 +327,20 @@
 				}
 			}
 			.btn{
-				font-size: 20px;
 				margin-bottom: 20px;
-				padding: 13px;
+					@media (max-width: 799px){
+						width: 50%;
+						float: none;
+					}
+					@media (max-width: 599px){
+						width: 100%;
+					}
 				& +.btn{
 					margin-left: 10px;
+					@media (max-width: 799px){
+						margin-left: 0;
+						float: none;
+					}
 				}
 			}
 		}
@@ -251,14 +356,24 @@
 	.find-text{
 	width: 50%;
 	float: left;
-	padding: 20px 27px;
+	padding: 30px 27px;
 	font-size: 30px;
 	color: #fff;
+	@media (max-width: 959px){
+		font-size: 20px;
+	}
+	@media (max-width: 767px){
+		width: 100%;
+		text-align: center;
+	}
 	@extend %vertical-aling;
 	}
 	.country-link{
 		width: 50%;
 		float: left;
+		@media (max-width: 767px){
+		width: 100%;
+		}
 		.link{
 			width: 33.3333%;
 			float: left;
@@ -267,6 +382,12 @@
 			color: #fff;
 			font-size: 24px;
 			border-left: 1px solid #da5a1f;
+			@media (max-width: 959px){
+				font-size: 20px;
+			}
+			@media (max-width: 767px){
+				border: none;
+			}
 			span{
 				display: block;
 				margin-bottom: 10px;
@@ -282,19 +403,39 @@
 }
 .solicitor-login{
 	overflow: hidden;
+	@media (max-width: 599px){
+		text-align: center;
+	}
 	.login-row{
 		padding: 45px 0 40px;
-		margin:0 -10px;
 		display: inline-block;
 		.login-block{
 			width: 50%;
-			float: left;
+			display: inline-block;
+			margin-left: -4px;
+			padding-left: 4px;
+			vertical-align: bottom;
+				@media (max-width: 599px){
+					width: 100%;
+				}
 			& +.login-block{
-				float: left;
 				text-align: right;
+				@media (max-width: 959px){
+					text-align: center;
+				}
+				@media (max-width: 599px){
+					margin-top: 10px;
+				}
 				.btn{
+					@media (max-width: 959px){
+						width: 100%;
+					}
 					& +.btn{
 					margin-left: 23px;
+						@media (max-width: 959px){
+							margin-left: 0;
+							margin-top: 10px;
+						}
 					}
 				} 
 			}
@@ -314,16 +455,24 @@
 	padding: 45px 0;
 
 	.footer-nav{
+		padding-bottom: 33px;
 		font-weight: 600;
+		@media(max-width: 499px){
+			font-size: 10px;
+		}
 		li{
 			display: inline;
+			a{
+				&:hover{
+					color: $generalOrangeText;
+				}
+			}
 			& + li{
 					margin-left: 10px;
 			}
 			
-		}
-		
-	}
+		}	
+	}	
 	.footer-logo{
 		background: url('../img/footer-logo.png') no-repeat center center;
 		display: block;

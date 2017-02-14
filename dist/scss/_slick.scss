@@ -111,10 +111,23 @@
     &.slick-prev{
         left: -60px;
             transform: translatey(-50%) rotate(-135deg);
+            @media (max-width: 1203px){
+                left: -11px;
+            }
+            @media (max-width: 1022px){
+                left: 15px;
+            }
       
     }
     &.slick-next{
         right: -60px;
         transform: translatey(-50%) rotate(45deg);
+         @media (max-width: 1203px){
+                right: -11px;
+            }
+         @media (max-width: 1022px){
+                right: 15px;
+         }   
+      
     }
 }

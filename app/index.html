@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/slicknav.css ">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +19,11 @@
 			<ul class="header-nav">
 				<li><a href="#">Articles</a></li>
 				<li><a href="#">Contact</a></li>
-				<li><a href="#"><span class="icon serch-ic"></span></a></li>
+				<li>
+					<a href="#"><span class="icon serch-ic"></span></a>
+					<input type="search" placeholder="search" class="form-serch">
+					<input type="submit" name value class="submit serch-ic">		
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -54,13 +59,21 @@
 							</div>
 							<div class="input-group">
 								<input type="checkbox" name="legal" id="legal">
-								<label for="legal">Accepts legal aid</label>
+								<label for="legal">
+									<span>Accepts legal aid</span>
+								</label>
 								<input type="checkbox" name="access" id="access">
-								<label for="access">Disabled access</label>
+								<label for="access">
+									<span>Disabled access</span>
+								</label>
 								<input type="checkbox" name="loops" id="loops">
-								<label for="loops">Hearing loops</label>
+								<label for="loops">
+									<span>Hearing loops</span>
+								</label>
 								<input type="checkbox" name="language" id="language">
-								<label for="language">Sign language</label>
+								<label for="language">
+									<span>Sign language</span>
+								</label>
 							</div>
 						</div>		
 					</form>
@@ -76,56 +89,74 @@
 			<div class="container">
 				<div class="row">
 					<div class="service-item">
-						<span class="icon home-ic"></span>		
-						<h3>Commercial property<span class="text">(6298)</span></h3>
+						<span class="icon home-ic"></span>
+						<a href="#">
+							<h3>Commercial property<span class="text">(6298)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon keys-ic"></span>		
-						<h3>Business and Commercial<span class="text">(4293)</span></h3>
+						<span class="icon keys-ic"></span>
+						<a href="#">
+							<h3>Business and Commercial<span class="text">(4293)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon admin-ic"></span>		
-						<h3>Employment<span class="text">(2305)</span></h3>
+						<span class="icon admin-ic"></span>	
+						<a href="#">
+							<h3>Employment<span class="text">(2305)</span></h3>
+						</a>	
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon commers-ic"></span>		
-						<h3>Commercial litigation<span class="text">(2590)</span></h3>
+						<span class="icon commers-ic"></span>
+						<a href="#">
+							<h3>Commercial litigation<span class="text">(2590)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon hands-ic"></span>		
-						<h3>Advocacy<span class="text">(1774)</span></h3>
+						<span class="icon hands-ic"></span>
+						<a href="#">
+							<h3>Advocacy<span class="text">(1774)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon apartment-ic"></span>		
-						<h3>Banking<span class="text">(2190)</span></h3>
+						<span class="icon apartment-ic"></span>
+						<a href="#">
+							<h3>Banking<span class="text">(2190)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon people-ic"></span>		
-						<h3>Children<span class="text">(726)</span></h3>
+						<span class="icon people-ic"></span>
+						<a href="#">
+							<h3>Children<span class="text">(726)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon resident-ic"></span>		
-						<h3>Residential conveyancing<span class="text">(4293)</span></h3>
+						<span class="icon resident-ic"></span>
+						<a href="#">
+							<h3>Residential conveyancing<span class="text">(4293)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
 					<div class="service-item">
-						<span class="icon crime-ic"></span>		
-						<h3>Crime<span class="text">(1883)</span></h3>
+						<span class="icon crime-ic"></span>
+						<a href="#">
+							<h3>Crime<span class="text">(1883)</span></h3>
+						</a>		
 						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae
 						portrudi.</p>
 					</div>
@@ -288,6 +319,7 @@
   	src="https://code.jquery.com/jquery-3.1.1.min.js"
  	 integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
  	 crossorigin="anonymous"></script>
+ 	 <script src="js/jquery.slicknav.js"></script>
  	 <script src="js/slick.min.js"></script>
  	 <script src="js/plugin.js"></script>
  	 <script src="js/jquery.formstyler.min.js"></script>
