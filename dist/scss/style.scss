@@ -41,13 +41,14 @@
 		padding: 25px 35px 0 37px;
 		background-color: rgba(0,0,0,.45);
 		width: 100%;
+		overflow: hidden;
 		.first-form{
 			margin-bottom: 10px;
 		}
 		.more-option{
-			display: inline-block;
+			display: block;
 			cursor: pointer;
-			padding-right: 87%;
+			text-align: left;
 			margin-bottom: 17px;
 			font-size: 14px;
 		}
@@ -82,7 +83,7 @@
 			.input-group{
 				overflow: hidden;
 				& +.input-group{
-					@media (max-width: 662px){
+					@media (max-width: 767px){
 							text-align: left;
 					
 					}
@@ -113,16 +114,17 @@
 					line-height: normal;
 					label{
 						float: left;
+						margin-top: 10px;
 						span{
 							vertical-align: middle;
 						}
-						@media(max-width: 662px){
+						@media(max-width: 767px){
 							float: none;
 							display: block;
 						}
 						& ~ label{
 							margin-left: 50px;
-							@media(max-width: 662px){
+							@media(max-width: 767px){
 								margin-left: 0;
 							}
 							}	
@@ -231,7 +233,7 @@
 	color: #fff;
 	.news-row{
 		overflow: hidden;
-		margin: 0 -13px;
+		margin: 0 -10px;
 		&>.title{
 			font-size: 24px;
 			margin-bottom: 50px;
@@ -239,7 +241,7 @@
 		.news-post{
 			width: 33.3333%;
 			float: left;
-			padding: 0 13px;
+			padding: 0 10px;
 			@media (max-width: 959px){
 				width: 100%;
 			}
@@ -386,7 +388,12 @@
 				font-size: 20px;
 			}
 			@media (max-width: 767px){
-				border: none;
+				// border: none;
+			}
+			@media (max-width: 499px){
+				width: 100%;
+				border-left: none;
+				border-top: 1px solid #da5a1f;
 			}
 			span{
 				display: block;

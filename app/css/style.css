@@ -221,7 +221,7 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
     float: left;
     margin-top: 15px; }
   .header .header-nav {
-    margin-top: 27px;
+    margin-top: 21px;
     float: right; }
     .header .header-nav .form-serch {
       display: none; }
@@ -232,7 +232,7 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
         display: none; } }
     .header .header-nav li {
       display: inline-block;
-      margin-right: 27px;
+      margin-right: 28px;
       font-size: 16px; }
       .header .header-nav li a {
         font-size: 16px; }
@@ -472,13 +472,14 @@ select {
     margin-top: 49px;
     padding: 25px 35px 0 37px;
     background-color: rgba(0, 0, 0, 0.45);
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     .inner .inner-form .first-form {
       margin-bottom: 10px; }
     .inner .inner-form .more-option {
-      display: inline-block;
+      display: block;
       cursor: pointer;
-      padding-right: 87%;
+      text-align: left;
       margin-bottom: 17px;
       font-size: 14px; }
     .inner .inner-form .form-control {
@@ -501,7 +502,7 @@ select {
       padding-bottom: 22px; }
       .inner .inner-form .second-form .input-group {
         overflow: hidden; }
-        @media (max-width: 662px) {
+        @media (max-width: 767px) {
           .inner .inner-form .second-form .input-group + .input-group {
             text-align: left; } }
         @media (max-width: 767px) {
@@ -522,16 +523,17 @@ select {
           margin-top: 15px;
           line-height: normal; }
           .inner .inner-form .second-form .input-group + .input-group label {
-            float: left; }
+            float: left;
+            margin-top: 10px; }
             .inner .inner-form .second-form .input-group + .input-group label span {
               vertical-align: middle; }
-            @media (max-width: 662px) {
+            @media (max-width: 767px) {
               .inner .inner-form .second-form .input-group + .input-group label {
                 float: none;
                 display: block; } }
             .inner .inner-form .second-form .input-group + .input-group label ~ label {
               margin-left: 50px; }
-              @media (max-width: 662px) {
+              @media (max-width: 767px) {
                 .inner .inner-form .second-form .input-group + .input-group label ~ label {
                   margin-left: 0; } }
       .inner .inner-form .second-form .form-control {
@@ -608,14 +610,14 @@ select {
   color: #fff; }
   .articles-wrap .news-row {
     overflow: hidden;
-    margin: 0 -13px; }
+    margin: 0 -10px; }
     .articles-wrap .news-row > .title {
       font-size: 24px;
       margin-bottom: 50px; }
     .articles-wrap .news-row .news-post {
       width: 33.3333%;
       float: left;
-      padding: 0 13px; }
+      padding: 0 10px; }
       @media (max-width: 959px) {
         .articles-wrap .news-row .news-post {
           width: 100%; } }
@@ -726,9 +728,11 @@ select {
       @media (max-width: 959px) {
         .find-solicitor .country-link .link {
           font-size: 20px; } }
-      @media (max-width: 767px) {
+      @media (max-width: 499px) {
         .find-solicitor .country-link .link {
-          border: none; } }
+          width: 100%;
+          border-left: none;
+          border-top: 1px solid #da5a1f; } }
       .find-solicitor .country-link .link span {
         display: block;
         margin-bottom: 10px; }
